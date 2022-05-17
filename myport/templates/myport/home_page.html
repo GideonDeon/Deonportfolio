@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>portfolio</title>
+	<link rel="shortcut icon" href="/static/images/icon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/home_page.css' %}">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+	<div class="holdAll" >
+		<main  id="top">
+			<nav>
+				<p class="logo" style="display: inline-block;">deon</p>
+				<div class="nav" style="display: inline-block;">
+					<ul>
+						<a href="#home"><li>Home</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#services"><li>Services</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#about"><li>About</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#mySkills"><li>Skills</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#myWork"><li>My works</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</ul>
+				</div>	
+			</nav>
+			<div class="menuWrapper">
+				<form class="form" name="form">
+					<input type="checkbox" class="toggle" id="toggly">
+					<div class="div">
+						<div></div>
+						<div></div>
+						<div></div>		
+					</div>
+					<aside class="menu">
+						<div class="menuList">
+							<ul>
+								<a href="#home" onclick="checkall(document.form.toggly)"><li>Home</li></a>
+								<br>
+								<a href="#services" onclick="checkall(document.form.toggly)"><li>Services</li></a>
+								<br>
+								<a href="#about" onclick="checkall(document.form.toggly)"><li>About</li></a>
+								<br>
+								<a href="#mySkills" onclick="checkall(document.form.toggly)"><li>Skills</li></a>
+								<br>
+								<a href="#myWork" onclick="checkall(document.form.toggly)"><li>My works</li></a>
+							</ul>
+						</div>
+					</aside>
+				</form>		
+			</div>	
+			<div class="home" id="home">
+				<div class="welcome">
+					<div class="icon">
+						<div  style="display: inline-block;">
+							<a href="https://wa.me/+23490898383"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+						</div>
+						<div  style="display: inline-block;">	
+							<a href="rr"><i class="fa-brands fa-twitter fa-lg"></i></a>
+						</div>
+						<div  style="display: inline-block;">
+							<a href=""><i class="fa-brands fa-telegram fa-lg"></i></i></i></a>
+						</div>
+						<div  style="display: inline-block;">	
+							<a href="https://github.com/GideonDeon"><i class="fa-brands fa-github fa-lg"></i></a>
+						</div>	
+						<div  style="display: inline-block;">
+							<a href="rr"><i class="fa-brands fa-behance fa-lg"></i></a>
+						</div>	
+					</div>
+					<p>i am a <span class="web">Full-stack</span> <span class="dev">developer</span></p>
+					<article>Hello! I'm Gideon, professional full-stack developer with long time experience in this field.</article>
+					<a href="#form"><button>HIRE ME!</button></a>&nbsp;&nbsp;
+					<button class="download">Download CV</button>
+				</div>
+				<aside class="img">
+				</aside>
+			</div>
+			<div class="services"  id="services">
+				<aside class="service">
+					<h3>services</h3>
+					<h1>My services</h1>
+					<div></div>
+					
+				</aside>
+				<content>
+					<div data-aos="fade-left" data-aos-duration="1000">
+						<i class="fa-solid fa-code fa-2x"></i>
+						<p class="serv">Web design & development</p>
+						<article>
+							I use various web technologies to develop atrractive websites which converts visitors to customers. I develop creative and responsive website layouts.
+						</article>
+					</div>
+					<div data-aos="fade-down" data-aos-duration="1000">
+						<i class="fa-brands fa-connectdevelop fa-2x"></i>
+						<p class="serv">UI/UX</p>
+						<article>
+							Whether you're looking to redesign yout website or just need help with the user experience; I deliver impressive, accesssible and usable designs which aid business growth.
+						</article>
+					</div>
+					<div data-aos="fade-right" data-aos-duration="1000">
+						<i class="fa-solid fa-pen fa-2x"></i>
+						<p class="serv">Graphic design</p>
+						<article>
+						 Do you need printed materials like business cards, brochures, or posters; are you undertaking a logo or identity rework; even if you are just working on a powerpoint presenntation - I'm here to help. 
+						</article>
+					</div>
+				</content>
+			</div>
+			<div class="aboutMe" id="about">
+				<aside class="about">
+					<h3>About</h3>
+					<h2>About me</h2>
+					<div></div>
+				</aside>
+				<div class="about2">
+					<div></div>
+					<aside data-aos="fade-left" data-aos-duration="1000">
+						<h2>Hi there!</h2>
+						<p>
+							I am a full-stack developer with a passion for thoughtful UI design. Besides participating in many tech programs where i have been trained to have both technical and soft skills, 
+							I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experience.
+							I develop websites with different languages and frameworks including HTML, CSS, javascript, Python, React and django. 
+							When I'm not coding, I am either reading, playing video games or watching movies(animes too <span class="emoji"></span>). Other times, I'm learning new languages or frameworks. 
+							Being a dilligent, hardworking and result oriented person, I always work towards achieveing best result on each project I lay hands on. 
+						<div class="accessMe">
+							<div>
+								<p>Fullname:</p>
+								<article>Gideon Oluwanifemi Gideon</article>
+							</div>	
+							<div>
+								<p>Phone:</p>
+								<article>+2349030739239</article>
+							</div>
+							<div>	
+								<p>Email:</p>
+								<article><a href="mailto:gideong351@gmail.com">gideong351@gmail.com</a></article>
+							</div>
+							<div>	
+								<p>Github:</p>
+								<article><a href="https://github.com/GideonDeon">GideonDeon</a></article>
+							</div>
+							
+						</div>
+					</aside>	
+				</div>	
+			</div>
+			<div class="mySkills" id="mySkills" >
+				<h2>Skills</h2>
+				<div></div>
+				<aside class="seeSkills" id="seeSkills">
+					<p>Click to see skills</p>
+				</aside>
+				<content id="content2" class="content2">	
+					<div class="langSkills">
+						<p>HTML & CSS</p>
+						<span class="count">85%</span> <meter class="htmlCss" value="0.85"></meter>
+						<div class="counter"></div>
+						<div id= firstbar>
+							<div id = secondbar></div>
+						</div>	
+						<p>JavaScript</p>
+						<span class="count">80%</span> <meter class="htmlCss" value="0.80"></meter>
+						<div class="counter"></div>
+						<div id= firstbar>
+							<div id = secondbar></div>
+						</div>	
+						<p>Python</p>
+						<span class="count">78%</span> <meter class="htmlCss" value="0.78"></meter>
+						<div class="counter"></div>
+						<div id= firstbar>
+							<div id = secondbar></div>
+						</div>	
+						<p>WordPress</p>
+						<span class="count">90%</span> <meter class="htmlCss" value="0.90"></meter>
+						<div class="counter"></div>
+						<div id= firstbar>
+							<div id = secondbar></div>
+						</div>	
+					</div>	
+					<div class="personalSkills">
+							<p>Communication</p>
+							<span class="count">80%</span> <meter class="htmlCss" value="0.80"></meter>
+							<div class="counter"></div>
+							<div id= firstbar>
+								<div id = secondbar></div>
+							</div>	
+							<p>Teamwork</p>
+							<span class="count">80%</span> <meter class="htmlCss" value="0.80"></meter>
+							<div class="counter"></div>
+							<div id= firstbar>
+								<div id = secondbar></div>
+							</div>	
+							<p>Creativity</p>
+							<span class="count">99%</span> <meter class="htmlCss" value="0.99"></meter>
+							<div class="counter"></div>
+							<div id= firstbar>
+								<div id = secondbar></div>
+							</div>	
+							<p>Dedication</p>
+							<span class="count">90%</span> <meter class="htmlCss" value="0.90"></meter>
+							<div class="counter"></div>
+							<div id= firstbar>
+								<div id = secondbar></div>
+							</div>						
+					</div>
+				</content>
+			</div>
+			<div class="contact" id="myWork">
+				<h2>My Works</h2>
+				<div></div>
+				<div class="contactMe">
+					<div class="work">
+						<div class="click">
+							<p>click to see more!</p>
+						</div>
+						<div>
+							<div class="slider">
+								<a href="{% url 'my_work' %}" target="_blank"><img src="{% static 'images/template1.png' %}"  class="slide"></a>
+							</div>	
+						</div>
+						<div class="motherCircle">
+							<div class="circle"></div>		
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+					</div>
+					<div class="form" id="form" data-aos="fade-down" data-aos-duration="1000" >
+						<h2>Contact Me</h2>
+						<p>Connect with me from anywhere around the world, Let's Seal a Deal!!!</p>
+						<p id="notice" style="color:#46a293; text-transform:uppercase; display: none;">Please name should be written in letters only!</p>
+						<form id="formItself" action="{% url 'submit_details' %}" method="POST" name="formItself" onsubmit="return validation()">
+							{% csrf_token %}
+							<label>
+								Name:&nbsp;<input type="text" name="text" required>
+							</label><br><br>	
+							<label>
+								Email:&nbsp;<input type="email" name="email" required>
+							</label><br><br>
+							<textarea  name="message" cols="50" rows="15" placeholder="message..."></textarea><br><br>
+							<button id="button">SEND</button>
+						</form>
+						<aside>
+							<div  style="display: inline-block;">
+								<a href=""><i class="fa-solid fa-phone-flip fa-2x"></i></a>
+							</div>
+							<div  style="display: inline-block;">
+								<a href="mailto:gideong351@gmail.com"><i class="fa-solid fa-envelope fa-2x"></i></i></a>
+							</div>
+						</aside>
+					</div>	
+					
+				</div>	
+			</div>
+			<a href="#top"><div class="backToTop"><p>>>></p></div></a>
+			<footer>
+				<p>copyright &copy; 2022</p>
+			</footer>
+		</main>	
+		<div class="floater1"></div>
+		<div class="floater2"></div>
+		<div class="floater3"></div>
+		<div class="floater4"></div>
+		<div class="floater5"></div>
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript" src="{% static 'js/home_page.js' %}"></script>
+	<script type="text/javascript">AOS.init();</script>
+</body>
+</html>

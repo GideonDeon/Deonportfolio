@@ -1,0 +1,2624 @@
+html{
+		scroll-behavior: smooth;
+	}
+body{
+		background: #1f2326;
+		box-sizing: border-box;
+		
+	}
+
+main{
+		box-shadow: 0px 0px 20px black;
+	}
+a[href]{
+		color: white;
+		text-decoration: none;
+	}
+::selection{
+	background-color: #46a293;
+	color: #fff;
+}
+.emoji::after{
+	content:"\01F612";
+}
+.floater1,.floater2,.floater3,.floater4,.floater5{
+	height: 2em;
+	width: 2em;
+	background-color: rgba(70, 162, 147, .2);
+	z-index: 5;
+}	
+								
+@media screen and (min-width: 1200px){
+	.holdAll{
+		padding: 40px;
+	}
+	nav{
+		background: #252a30;
+	}
+	nav>p{
+		color: white;
+		font-size: 1.5em;
+		font-family: ephesis;
+		text-transform: capitalize;
+		transform: translateX(6vw);
+		
+	}
+	.nav{
+		position: relative;
+		left: 90%;
+		transform: translateX(-90%);
+	}
+	.nav>ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		list-style-type: none;
+	}
+	.nav>ul>a>li:hover{
+		color: #46a293;
+		transform: translateY(-5px);
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+	.menuWrapper{
+		display: none;
+	}	
+
+
+	 /*IM A WEB DEVELOPER*/
+
+	.home{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding-right: 100px;
+		padding-left: 100px;
+		background-image: url("/static/images/future2.jpg");
+		background-position: center center;
+		background-color: rgba(0, 0, 0, .7);
+		background-blend-mode: overlay;
+		background-size: cover;
+		font-family: monospace;
+	}
+	.welcome{
+		padding: 40px;
+		line-height: 20px;
+	}
+	.welcome>.icon div{
+		background: black;
+		height: 40px ;
+		width: 40px;
+		border: solid 2px #46a293;
+		border-radius: 20px;
+	}
+	.img{
+		background-image: url("/static/images/illustration.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		
+	}
+	i{
+		color: white;
+		transform: translate(10px, 12px);
+	}
+	.welcome>p{
+		color: #fbffff;
+		font-size:2.7em;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 20px #fbffff;
+	}
+	.welcome>article{
+		font-size: 1.2em;
+		color: whitesmoke;
+	}
+	.web{
+		animation-name: blink;
+		animation-duration: 0.7s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+	}
+	.dev{
+		animation-name: blinky;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+	}
+	.welcome>a button, .welcome>a+button{
+		background: rgba(0, 0, 0, .5);
+		margin-top: 20px;
+		height: 50px;
+		border: solid 3px #46a293;
+		color: white;
+		animation-name: bounce;
+		animation-duration: 0.5s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+		cursor: pointer;
+
+	}
+
+	/*SERVICE*/
+
+	.services{
+		padding: 10px 100px 10px 100px;
+		background-color: #252a30;
+	}
+	.service>h3{
+		color: #46a293;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.service>h1{
+		text-align: center;
+		color: white;
+
+	}
+	.service>p{
+		font-family: monospace;
+		text-align: center;
+		color: silver;
+	}
+	.service>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	content{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 10px;
+	}
+	content>div i{
+		
+		color:#46a293;
+	}
+	.service+content>div{
+		background: #1f2326;
+		padding: 20px;
+
+	}
+	.service+content>div p{
+		color: white;
+		font-size: 1em;
+		text-transform: capitalize;
+	}
+	.service+content>div article{
+		color: silver;
+		text-align: justify;
+		font-family: monospace;
+	}
+
+	/*ABOUTME*/
+
+	.aboutMe{
+		padding: 10px 100px 10px 100px;
+		background-color:#1f2326 ;
+	}	
+	.aboutMe>div,.accessMe{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.about>h3{
+		font-family: monospace;
+		text-align: center;
+		text-transform: uppercase;
+		color:  #46a293;
+	}
+	.about>h2{
+		text-align: center;
+		color: white;
+	}
+	.about>p{
+		text-align: center;
+		font-family: monospace;
+		color: silver;
+	}
+	.about>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.about2>div{
+		transform: translate(200px, 30px);
+		width: 200px;
+		height: 200px;
+		border-radius: 110px;
+		border: solid 8px #46a293;
+		background-image: url("/static/images/gideon2.png");
+		background-size: contain;
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-color: rgba(0, 0, 0, .6);
+		background-blend-mode: overlay;
+	}
+	.about2>aside h2,.about2>aside p{
+		color: white;
+		font-family: monospace;
+		text-align: justify;
+	}
+	.accessMe>div p{
+		color: #46a293;
+	}
+	.accessMe>div article{
+		color: white;
+	}
+
+	/*SKILLS*/
+
+	.mySkills{
+		padding: 10px 100px 10px 100px;
+		background-color: #252a30;
+	}
+
+	.mySkills>h2{
+		text-align: center;
+		color: white;
+	}
+
+	.mySkills>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.content2{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		justify-items: center;
+	}
+	.content2>div p{
+		font-size: 20px;
+		color: white;
+	}
+	.content2>div p+div{
+		color: #46a293;
+	}meter{
+		width: 15em;
+		height: 1em;
+		display: none;
+	}
+	span.count{
+		display: none;
+	}
+	#firstbar{
+		display: inline-block;
+		width: 400px;
+		height: 20px;
+		background: black;
+		border-radius: 20px;
+	}
+	#secondbar{
+		width: 10px;
+		height: 10px;
+		background: #46a293;
+		transform: translate(5px,5px);
+		border-radius: 20px;
+		transition: width 1s;
+	}
+	.counter,.counter2,.counter3,.counter4,.counter5,.counter6,.counter7,.counter8{
+		display: inline-block;
+		font-size: 18px;
+		color:  #46a293;
+		transform: translateY(-5px);
+	}	
+	.seeSkills{
+		display: none;
+	}
+
+	/*WORK*/
+
+	.contact{
+		padding:10px 100px 10px 100px;
+		background-color: #1f2326 ;
+	}
+	.contact>h2,.form>p{
+		text-align: center;
+		color: white;
+	}
+	.contact>h2+div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.contactMe{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		justify-items: safe center;
+		padding-top: 30px;
+		
+	}
+	.click>p{
+		color: white;
+		font-size: 2em;
+		font-family: ink Free;
+		text-align: center;
+	}
+	.slider>a>img{
+		height: 20em;
+		width:35em;
+	}
+	.motherCircle{
+		transform: translateX(16vw);
+		width: 4vw;
+	}
+	.circle{
+		display: inline-block;
+		background: #1f2326;
+		height: 1vh;
+		width: 1vh;
+		border: solid 1px #46a293 ;
+		border-radius: 1vh;
+	}
+	.contactMe>.form>aside>div>a i{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #46a293;
+
+	}
+	.contactMe>.form>aside>div>a i:hover{
+		color: white;
+	}
+	.contactMe>.form>aside{
+		margin-top: 10px;
+	}
+	.form>h2{
+		color: white;
+		font-family: ink Free;
+	}
+
+	form{
+		border: solid 4px #46a293;
+		border-radius: 20px;
+		padding:20px;
+		height:400PX;
+		color:white;
+		font-size: 20px;
+
+	}
+
+	input{
+		height: 25px;
+		width: 320px;
+		border-radius: 20px;
+	}
+	textarea{
+		border-radius: 20px;
+		text-indent: 10px;
+	}
+	form>button{
+		height: 40px;
+		width: 70px;
+		color: black;
+		background-color: #fbffff;
+		border: none;
+		border-radius: 20px;
+		font-family: arial black;
+		animation-name: send;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+		cursor: pointer;
+	}
+
+	/*FOOTER*/
+
+	.backToTop{
+		background: rgba(70, 162, 147, .5);
+		height: 50px;
+		width: 50px;
+		border-radius: 40px;
+		border: solid 2px #46a293;
+		font-size: 20px;
+		font-weight: bolder;
+		text-align: center;
+		position: fixed;
+		bottom: 150px;
+		right: 70px;
+		transform: rotate(-90deg);
+		visibility: hidden;
+	}
+	.backToTop:hover{
+		background-color: white;
+	}
+	.backToTop>p{
+		color: white;
+		transform: translate(1px,-6px);
+		animation-name: top;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+
+	footer{
+		padding:10px 100px 10px 100px;
+		background-color: #252a30;
+		text-align: center;
+		color: white;
+	}	
+	.floater1{
+		position: absolute;
+		top: 0;
+		animation-name: float1;
+		animation-iteration-count: infinite;
+		animation-duration: 30s;
+		animation-direction: alternate-reverse;
+	}	
+	@keyframes float1{
+		from{
+			top:0;
+		}
+		to{
+			top: 90em;
+		}
+	}
+	.floater2{
+		position: absolute;
+		top: 30em;
+		left: 20em;
+		animation-name: float2;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}	
+	@keyframes float2{
+		from{
+			top:30em;
+			left: 20em;
+		}
+		to{
+			top: 100em;
+			left: 0em;
+		}
+	}
+	.floater3{
+		position: absolute;
+		top: 20em;
+		left: 50em;
+		animation-name: float3;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float3{
+		from{
+		
+			left: 50em;
+		}
+		to{
+			left: 10em;
+		}
+	}
+	.floater4{
+		position: absolute;
+		top: 10em;
+		right: 70em;
+		animation-name: float4;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float4{
+		from{
+			top: 10em;
+			right: 70em;
+		}
+		to{
+			top:70em ;
+			right: 20em;
+		}
+	}
+	
+	.floater5{
+		position: absolute;
+		top: 25em;
+		right: 20em;
+		animation-name: float5;
+		animation-iteration-count: infinite;
+		animation-duration: 25s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float5{
+		from{
+			top: 25em;
+		}
+		to{
+			top: 90em ;
+		}
+	}
+	@keyframes blink{
+		from{
+			color:#fbffff;
+			text-shadow: 2px 2px 20px #fbffff;
+		}
+
+		to{
+			color: #0e3742;
+			text-shadow: none;
+		}
+	}
+	@keyframes blinky{
+		from{
+			color: #fbffff;
+			text-shadow: 2px 2px 20px #fbffff;
+		}
+
+		to{
+			color: #0e3742;
+			text-shadow: none;
+		}
+	}
+	@keyframes bounce{
+		from{
+			border: solid 3px #46a293;
+		}
+
+		to{
+			border: dashed 3px #46a293;
+		}
+	}
+	@keyframes send{
+		from{
+			background-color:#fbffff;
+			box-shadow: 0px 0px 5px #fbffff;
+		}
+
+		to{
+			background-color: #1f2326;
+			box-shadow: none;
+		}
+	}	
+	@keyframes top{
+		from{
+			transform: translate(1px,-6px);
+			color: white;
+		}
+		to{
+			transform: translate(-5px,-6px);
+			color: #1f2326;
+		}
+	}
+}
+												/*Large tablet/small laptop view */
+@media(min-width: 869px) and (max-width: 1025px){
+	.holdAll{
+		padding: 40px;
+	}
+	nav{
+		background: #252a30;
+	}
+	nav>p{
+		color: white;
+		font-size: 1.7em;
+		font-family: ephesis;
+		text-transform: capitalize;
+		transform: translateX(3vw);
+		
+	}
+	.nav{
+		position: relative;
+		left: 90%;
+		transform: translateX(-90%);
+	}
+	.nav>ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		list-style-type: none;
+	}
+	.nav>ul>a>li:hover{
+		color: #46a293;
+		transform: translateY(-5px);
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+	.menuWrapper{
+		display: none;
+	}
+	/*IM A WEB DEVELOPER*/
+
+	.home{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		padding-right: 50px;
+		padding-left: 50px;
+		background-image: url("/static/images/future2.jpg");
+		background-position: center center;
+		background-color: rgba(0, 0, 0, .7);
+		background-blend-mode: overlay;
+		background-size: cover;
+		font-family: monospace;
+	}
+	.welcome{
+		padding: 40px;
+		line-height: 20px;
+	}
+	.welcome>.icon div{
+		background: black;
+		height: 40px ;
+		width: 40px;
+		border: solid 2px #46a293;
+		border-radius: 20px;
+	}
+	.img{
+		background-image: url("/static/images/illustration.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	i{
+		color: white;
+		transform: translate(10px, 12px);
+	}
+	.welcome>p{
+		color: #fbffff;
+		font-size:2em;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 20px #fbffff;
+	}
+	.welcome>article{
+		font-size: 1.2em;
+		color: whitesmoke;
+	}
+	.web{
+		animation-name: blink;
+		animation-duration: 0.7s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+	}
+	.dev{
+		animation-name: blinky;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+	}
+	.welcome>a button, .welcome>a+button{
+		background: rgba(0, 0, 0, .5);
+		margin-top: 20px;
+		height: 30px;
+		border: solid 3px #46a293;
+		color: white;
+		animation-name: bounce;
+		animation-duration: 0.5s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+		cursor: pointer;
+
+	}
+	/*SERVICE*/
+
+	.services{
+		padding: 10px 100px 10px 100px;
+		background-color: #252a30;
+	}
+	.service>h3{
+		color: #46a293;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.service>h1{
+		text-align: center;
+		color: white;
+
+	}
+	.service>p{
+		font-family: monospace;
+		text-align: center;
+		color: silver;
+	}
+	.service>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	content{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 10px;
+	}
+	content>div i{
+		
+		color:#46a293;
+	}
+	.service+content>div{
+		background: #1f2326;
+		padding: 10px;
+
+	}
+	.service+content>div p{
+		color: white;
+		font-size: 1em;
+		text-transform: capitalize;
+	}
+	.service+content>div article{
+		color: silver;
+		text-align: left;
+		font-family: monospace;
+	}
+
+	/*ABOUTME*/
+
+	.aboutMe{
+		padding: 10px 100px 10px 100px;
+		background-color:#1f2326 ;
+	}	
+	.aboutMe>div,.accessMe{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.about>h3{
+		font-family: monospace;
+		text-align: center;
+		text-transform: uppercase;
+		color:  #46a293;
+	}
+	.about>h2{
+		text-align: center;
+		color: white;
+	}
+	.about>p{
+		text-align: center;
+		font-family: monospace;
+		color: silver;
+	}
+	.about>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.about2>div{
+		transform: translate(10px, 30px);
+		width: 200px;
+		height: 200px;
+		border-radius: 110px;
+		border: solid 8px #46a293;
+		background-image: url("/static/images/gideon2.png");
+		background-size: contain;
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-color: rgba(0, 0, 0, .6);
+		background-blend-mode: overlay;
+	}
+	.about2>aside h2,.about2>aside p{
+		color: white;
+		font-family: monospace;
+	}
+	.accessMe>div p{
+		color: #46a293;
+	}
+	.accessMe>div article{
+		color: white;
+	}
+	
+	/*SKILLS*/
+
+	.mySkills{
+		padding: 10px;
+		background-color: #252a30;
+	}
+
+	.mySkills>h2{
+		text-align: center;
+		color: white;
+	}
+
+	.mySkills>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.content2{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		justify-items: left;
+		opacity: 0.0;
+		transition: 3s;
+	}
+	.content2>div p{
+		font-size: 1em;
+		color: white;
+		
+	}
+	.content2>div p+div{
+		color: #46a293;
+	}
+	.seeSkills{
+		background: rgba(0, 0, 0, .5);
+		border: solid 3px #46a293;
+		border-radius: 5px;
+		width: 6em;
+		height: 3em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	.seeSkills>p{
+		color: white;
+		text-align: center;
+		font-family: ink Free;
+		animation-name: sabi;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+	meter{
+		width: 20em;
+		height: 1.5em;
+		
+	}
+	meter::-webkit-meter-optimum-value{
+		background: #46a293;
+	}
+	meter::-moz-meter-optimum-value{
+		background: #46a293;
+	}
+	meter::-webkit-meter-bar{
+		background: black;
+	}
+	meter::-moz-meter-bar{
+		background: black;
+	}
+	span{
+		color: #46a293;
+	}
+	#firstbar{
+		display: inline-block;
+		width: 2em;
+		height: 1em;
+		background: black;
+		border-radius: 20px;
+		display: none;
+	}
+	#secondbar{
+		width: 10px;
+		height: 10px;
+		background: #46a293;
+		transform: translate(5px,5px);
+		border-radius: 20px;
+		transition: width 1s;
+		display: none;
+	}
+	.counter,.counter2,.counter3,.counter4,.counter5,.counter6,.counter7,.counter8{
+		display: inline-block;
+		font-size: 18px;
+		color: black;
+		transform: translateY(-5px);
+		display: none;
+	}	
+
+	/*WORK*/
+
+	.contact{
+		padding:10px 100px 10px 100px;
+		background-color: #1f2326 ;
+	}
+	.contact>h2,.form>p{
+		text-align: center;
+		color: white;
+	}
+	.contact>h2+div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.contactMe{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		justify-items: safe center;
+		padding-top: 30px;
+		
+	}
+	.click>p{
+		color: white;
+		font-size: 2em;
+		font-family: ink Free;
+		text-align: center;
+	}
+	.slider>a>img{
+		height: 20em;
+		width:35em;
+	}
+	.motherCircle{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 7vw;
+	}
+	.circle{
+		display: inline-block;
+		background: #1f2326;
+		height: 1vh;
+		width: 1vh;
+		border: solid 1px #46a293 ;
+		border-radius: 1vh;
+	}
+	.contactMe>.form>aside>div>a i{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #46a293;
+
+	}
+	.contactMe>.form>aside>div>a i:hover{
+		color: white;
+	}
+	.contactMe>.form>aside{
+		margin-top: 10px;
+	}
+	.form>h2{
+		color: white;
+		font-family: ink Free;
+	}
+
+	form{
+		border: solid 4px #46a293;
+		border-radius: 20px;
+		padding:20px;
+		height:400PX;
+		color:white;
+		font-size: 20px;
+
+	}
+
+	input{
+		height: 25px;
+		width: 320px;
+		border-radius: 20px;
+	}
+	textarea{
+		border-radius: 20px;
+		text-indent: 10px;
+	}
+	form>button{
+		height: 40px;
+		width: 70px;
+		color: black;
+		background-color: #fbffff;
+		border: none;
+		border-radius: 20px;
+		font-family: arial black;
+		animation-name: send;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+		cursor: pointer;
+	}
+	/*FOOTER*/
+
+	.backToTop{
+		background: rgba(70, 162, 147, .5);
+		height: 50px;
+		width: 50px;
+		border-radius: 40px;
+		border: solid 2px #46a293;
+		font-size: 20px;
+		font-weight: bolder;
+		text-align: center;
+		position: fixed;
+		bottom: 150px;
+		right: 70px;
+		transform: rotate(-90deg);
+		visibility: hidden;
+	}
+	.backToTop:hover{
+		background-color: white;
+	}
+	.backToTop>p{
+		color: white;
+		transform: translate(1px,-6px);
+		animation-name: top;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+
+	footer{
+		padding:10px 100px 10px 100px;
+		background-color: #252a30;
+		text-align: center;
+		color: white;
+	}
+	.floater1{
+		position: absolute;
+		top: 0;
+		animation-name: float1;
+		animation-iteration-count: infinite;
+		animation-duration: 30s;
+		animation-direction: alternate-reverse;
+	}	
+	@keyframes float1{
+		from{
+			top:0;
+		}
+		to{
+			top: 90em;
+		}
+	}
+	.floater2{
+		position: absolute;
+		top: 30em;
+		left: 20em;
+		animation-name: float2;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}	
+	@keyframes float2{
+		from{
+			top:30em;
+			left: 20em;
+		}
+		to{
+			top: 100em;
+			left: 0em;
+		}
+	}
+	.floater3{
+		position: absolute;
+		top: 20em;
+		left: 50em;
+		animation-name: float3;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float3{
+		from{
+		
+			left: 50em;
+		}
+		to{
+			left: 10em;
+		}
+	}
+	.floater4{
+		position: absolute;
+		top: 10em;
+		right: 70em;
+		animation-name: float4;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float4{
+		from{
+			top: 10em;
+			right: 70em;
+		}
+		to{
+			top:70em ;
+			right: 20em;
+		}
+	}
+	
+	.floater5{
+		position: absolute;
+		top: 25em;
+		right: 20em;
+		animation-name: float5;
+		animation-iteration-count: infinite;
+		animation-duration: 25s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float5{
+		from{
+			top: 25em;
+		}
+		to{
+			top: 90em ;
+		}
+	}
+	@keyframes blink{
+		from{
+			color:#fbffff;
+			text-shadow: 2px 2px 20px #fbffff;
+		}
+
+		to{
+			color: #0e3742;
+			text-shadow: none;
+		}
+	}
+	@keyframes blinky{
+		from{
+			color: #fbffff;
+			text-shadow: 2px 2px 20px #fbffff;
+		}
+
+		to{
+			color: #0e3742;
+			text-shadow: none;
+		}
+	}
+	@keyframes bounce{
+		from{
+			border: solid 3px #46a293;
+		}
+
+		to{
+			border: dashed 3px #46a293;
+		}
+	}
+	@keyframes send{
+		from{
+			background-color:#fbffff;
+			box-shadow: 0px 0px 5px #fbffff;
+		}
+
+		to{
+			background-color: #1f2326;
+			box-shadow: none;
+		}
+	}	
+	@keyframes top{
+		from{
+			transform: translate(1px,-6px);
+			color: white;
+		}
+		to{
+			transform: translate(-5px,-6px);
+			color: #1f2326;
+		}
+	}
+	@keyframes sabi{
+		from{
+			color:white;
+		}
+		to{
+			color:#46a293;
+		}	
+	}
+}
+
+
+														/*tablet view*/
+
+@media  (min-width: 550px) and (max-width: 868px){
+		.holdAll{
+			padding: 1em;
+		}
+		nav{
+			background: #252a30;
+		}
+		nav>p{
+			color: white;
+			font-size: 1.5em;
+			font-family: ephesis;
+			text-transform: capitalize;
+			transform: translateX(6vw);
+		}	
+		.nav>ul{
+			display: none;
+		}	
+		.div{
+			background:#252a30;;
+			height: 2em;
+			width: 2em;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			right: 2em;
+			top: 3em;
+		}
+		.div>div{
+			background: white;
+			height: 0.5rem;
+			width: 1.9rem;
+			border-radius: 10px;
+			transition: all 0.6s ease;
+		}
+		.toggle{
+		position: absolute;
+		right: -9.6em;
+		top: 3.5em;
+		z-index: 1;
+		opacity: 0;
+	}
+	.toggle:checked + .div>div:nth-child(1){
+		position: absolute;
+		top: 1em;
+		height: 0.1em;
+		transform: rotate(135deg);
+	}
+	.toggle:checked + .div>div:nth-child(2){
+		position: absolute;
+		top: 1em;
+		height: 0.1em;
+		transform: rotate(220deg);
+	}
+	.toggle:checked + .div>div:nth-child(3){
+		opacity: 0;
+		transform: rotate(250deg);
+	}
+	.toggle:checked:hover + .div>div:nth-child(1){
+		position: absolute;
+		top: 1em;
+		height: 0.1em;
+		transform: rotate(220deg);
+	}
+	.toggle:checked:hover + .div>div:nth-child(2){
+		position: absolute;
+		top: 1em;
+		height: 0.1em;
+		transform: rotate(320deg);
+	}
+	.menu{
+		position: absolute;
+		right: 1em;
+		top: 1em;
+		z-index: 0;
+		padding: 50px 25px 20px 0px;
+		background-color: rgba(0, 0, 0, .4);
+		height: 40%;
+		width: 60%;
+		border: solid 1px #46a293;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 1s;
+	}
+	.menuList>ul{
+		list-style-type: none;
+		text-align: center;
+		font-size: 1.5em;
+	}
+	.menuList>ul>a>li:hover{
+		color:#46a293;
+		text-shadow: 0px 0px 5px white;
+		transform: translateY(-3px);
+	}
+	.toggle:checked ~ .menu{
+		visibility: visible;
+		opacity: 1;
+	}
+
+	/*i am a web developer*/
+
+	.home{
+		background-image: url("/static/images/future2.jpg");
+		background-position: center center;
+		background-color: rgba(0, 0, 0, .7);
+		background-blend-mode: overlay;
+		background-size: cover;
+		font-family: monospace;
+	}
+	img{
+		display: none;
+	}
+	.welcome{
+		padding: 40px;
+		line-height: 20px;
+	}
+	i{
+		color: white;
+		transform: translate(-1em, -1em);
+	}
+	.welcome>p{
+		color: #fbffff;
+		font-size:1.4em;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 20px #fbffff;
+		padding-top: -10px;
+	}
+	.welcome>article{
+		font-size: 1em;
+		color: whitesmoke;
+	}
+	.web{
+		animation-name: blink;
+		animation-duration: 0.7s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+	}
+	.dev{
+		animation-name: blinky;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+	}
+	.welcome>a button{
+		background: rgba(0, 0, 0, .5);
+		height: 2.5em;
+		margin-top: 10px;
+		border: solid 3px #46a293;
+		color: white;
+		animation-name: bounce;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+		cursor: pointer;
+
+	}
+	.welcome>a+button{
+		background: rgba(0, 0, 0, .5);
+		height: 2.5em;
+		margin-top: 10px;
+		border: solid 3px #46a293;
+		color: white;
+		animation-name: bounce2;
+		animation-duration: 1s;
+		animation-delay: 1.2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+		cursor: pointer;
+	}
+	/*SERVICE*/
+
+	.services{
+		padding: 10px;
+		background-color: #252a30;
+	}
+	.service>h3{
+		color: #46a293;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.service>h1{
+		text-align: center;
+		color: white;
+
+	}
+	.service>p{
+		font-family: monospace;
+		text-align: center;
+		color: silver;
+	}
+	.service>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	content{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 10px;
+	}
+	content>div i{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #46a293;
+	}
+	.service+content>div{
+		background: #1f2326;
+		padding: 50px 10px 10px 10px;
+
+	}
+	.service+content>div p{
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		text-transform: capitalize;
+	}
+	.service+content>div article{
+		color: silver;
+		text-align: center;
+		font-family: monospace;
+	}
+	/*ABOUTME*/
+
+	.aboutMe{
+		padding: 10px;
+		background-color:#1f2326 ;
+	}	
+	.aboutMe>div{
+		display: grid;
+		grid-template-rows: 1fr 2fr;
+	}
+	.about>h3{
+		font-family: monospace;
+		text-align: center;
+		text-transform: uppercase;
+		color:  #46a293;
+	}
+	.about>h2{
+		text-align: center;
+		color: white;
+	}
+	.about>p{
+		text-align: center;
+		font-family: monospace;
+		color: silver;
+	}
+	.about>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.about2>div{
+		width: 10em;
+		height: 10em;
+		border-radius: 9em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+		border: solid 2px #46a293;
+		background-image: url("/static/images/gideon2.png");
+		background-size: contain;
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-color: rgba(0, 0, 0, .6);
+		background-blend-mode: overlay;
+	}
+	.about2>aside h2,.about2>aside p{
+		color: white;
+		font-family: monospace;
+	}
+	.accessMe{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
+	.accessMe>div p{
+		color: #46a293;
+	}
+	.accessMe>div article{
+		color: white;
+	}
+
+
+	/*SKILLS*/
+
+	.mySkills{
+		padding: 10px;
+		background-color: #252a30;
+	}
+
+	.mySkills>h2{
+		text-align: center;
+		color: white;
+	}
+
+	.mySkills>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.content2{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 10px;
+		justify-items: left;
+		opacity: 0.0;
+		transition: 3s;
+	}
+	.content2>div p{
+		font-size: 1em;
+		color: white;
+		
+	}
+	.content2>div p+div{
+		color: #46a293;
+	}
+	.seeSkills{
+		background: rgba(0, 0, 0, .5);
+		border: solid 3px #46a293;
+		border-radius: 5px;
+		width: 6em;
+		height: 3em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	.seeSkills>p{
+		color: white;
+		text-align: center;
+		font-family: ink Free;
+		animation-name: sabi;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+	meter{
+		width: 25em;
+		height: 1.5em;	
+	}
+	meter::-webkit-meter-optimum-value{
+		background: #46a293;
+	}
+	meter::-moz-meter-optimum-value{
+		background: #46a293;
+	}
+	meter::-webkit-meter-bar{
+		background: black;
+	}
+	meter::-moz-meter-bar{
+		background: black;
+	}
+	span{
+		color: #46a293;
+	}
+	.counter{
+		display: none;
+	}
+	#firstbar{
+		display: inline-block;
+		width: 2em;
+		height: 1em;
+		background: black;
+		border-radius: 20px;
+		display: none;
+	}
+	#secondbar{
+		width: 10px;
+		height: 10px;
+		background: #46a293;
+		transform: translate(5px,5px);
+		border-radius: 20px;
+		transition: width 1s;
+		display: none;
+	}
+	.counter,.counter2,.counter3,.counter4,.counter5,.counter6,.counter7,.counter8{
+		display: inline-block;
+		font-size: 18px;
+		color: black;
+		transform: translateY(-5px);
+		display: none ;
+	}
+	/*WORK*/
+
+	.contact{
+		padding:10px;
+		background-color: #1f2326;
+	}
+	.contact>h2,.form>p{
+		text-align: center;
+		color: white;
+	}
+	.contact>h2+div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.contactMe{
+		display: grid;
+		grid-template-rows: 1fr 2fr;
+		justify-items: safe center;
+	}	
+	.click>p{
+		color: white;
+		font-size: 1em;
+		font-family: ink Free;
+		text-align: center;
+	}
+	.slider>a>img{
+		height: 20em;
+		width: 20em;
+		display: block;
+	}
+	.motherCircle{
+		width: 5em;
+		position: relative;
+		left: 60%;
+		transform: translateX(-65%);
+	}
+	.circle{
+		display: inline-block;
+		background: #1f2326;
+		height: 0.4em;
+		width: 0.4em;
+		border: solid 1px #46a293 ;
+		border-radius: 1em;
+	}
+	.contactMe>.form>aside>div>a i{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #46a293;
+
+	}
+	.contactMe>.form>aside>div>a i:hover{
+		color: white;
+	}
+	.form>h2, .form>p{
+		color: white;
+		font-family: ink Free;
+		font-size: 1rem;
+	}
+
+	#formItself{
+		border: solid 4px #46a293;
+		border-radius: 20px;
+		padding:20px;
+		height: 24.5em;
+		color:white;
+		font-size: 1rem;
+
+	}
+	input{
+		height: 2em;
+		width: 26em;
+		border-radius: 20px;
+	}
+	textarea{
+		border-radius: 20px;
+		text-indent: 10px;
+		height: 15em;
+		width: 30em;
+	}
+	form>button{
+		height: 40px;
+		width: 70px;
+		color: black;
+		background-color: #fbffff;
+		border: none;
+		border-radius: 20px;
+		font-family: arial black;
+		animation-name: send;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+	}
+
+	/*FOOTER*/
+
+	.backToTop{
+		background: rgba(70, 162, 147, .5);
+		height: 40px;
+		width: 40px;
+		border-radius: 30px;
+		border: solid 2px #46a293;
+		font-size: 14px;
+		font-weight: bolder;
+		text-align: center;
+		position: fixed;
+		bottom: 120px;
+		right: 40px;
+		transform: rotate(-90deg);
+		visibility: hidden;
+	}
+	.backToTop:hover{
+		background-color: white;
+	}
+	.backToTop>p{
+		color: white;
+		transform: translate(1px,-1px);
+		animation-name: top;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+
+	footer{
+		padding:10px 100px 10px 100px;
+		background-color: #252a30;
+		text-align: center;
+		color: white;
+	}
+	
+	.floater1{
+		position: absolute;
+		top: 0;
+		animation-name: float1;
+		animation-iteration-count: infinite;
+		animation-duration: 30s;
+		animation-direction: alternate-reverse;
+	}	
+	@keyframes float1{
+		from{
+			top:0;
+		}
+		to{
+			top: 90em;
+		}
+	}
+	.floater2{
+		position: absolute;
+		top: 30em;
+		left: 20em;
+		animation-name: float2;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}	
+	@keyframes float2{
+		from{
+			top:30em;
+			left: 20em;
+		}
+		to{
+			top: 100em;
+			left: 0em;
+		}
+	}
+	.floater3{
+		position: absolute;
+		top: 20em;
+		left: 30em;
+		animation-name: float3;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float3{
+		from{
+		
+			left: 30em;
+		}
+		to{
+			left: 10em;
+		}
+	}
+	.floater4{
+		position: absolute;
+		top: 10em;
+		right: 40em;
+		animation-name: float4;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float4{
+		from{
+			top: 10em;
+			right: 40em;
+		}
+		to{
+			top:70em ;
+			right: 20em;
+		}
+	}
+	
+	.floater5{
+		position: absolute;
+		top: 25em;
+		right: 20em;
+		animation-name: float5;
+		animation-iteration-count: infinite;
+		animation-duration: 50s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float5{
+		from{
+			top: 25em;
+		}
+		to{
+			top: 90em ;
+		}
+	}
+
+	@keyframes blink{
+		from{
+			color:#fbffff;
+			text-shadow: 2px 2px 20px #fbffff;
+		}
+
+		to{
+			color: #0e3742;
+			text-shadow: none;
+		}
+	}
+	@keyframes blinky{
+		from{
+			color: #fbffff;
+			text-shadow: 2px 2px 20px #fbffff;
+		}
+
+		to{
+			color: #0e3742;
+			text-shadow: none;
+		}
+	}
+	@keyframes bounce{
+		from{
+			border-radius: 0px;
+		}
+
+		to{
+			border-radius: 30px;
+		}
+	}
+	@keyframes bounce2{
+		from{
+			border-radius: 0px;
+		}
+
+		to{
+			border-radius: 30px;
+		}
+	}
+	@keyframes sabi{
+		from{
+			color:white;
+		}
+		to{
+			color:#46a293;
+		}	
+	}
+	@keyframes top{
+		from{
+			transform: translate(1px,-1px);
+			color: white;
+		}
+		to{
+			transform: translate(-3px,-1px);
+			color: #1f2326;
+		}
+	}
+	@keyframes send{
+		from{
+			background-color:#fbffff;
+			box-shadow: 0px 0px 5px #fbffff;
+		}
+
+		to{
+			background-color: #1f2326;
+			box-shadow: none;
+		}
+	}	
+
+}	
+
+ 														/*Phone view*/
+
+
+@media (min-width: 320px) and  (max-width: 549px){
+	.holdAll{
+		padding: 0.5em;
+	}
+	nav{
+		background: #252a30;
+	}
+	nav>p{
+		color: white;
+		font-size: 1.3em;
+		font-family: ephesis;
+		text-transform: capitalize;
+		transform: translateX(6vw);
+		
+	}	
+	.nav>ul{
+			display: none;
+	}		
+	.div{
+		background:#252a30;;
+		height: 2em;
+		width: 2em;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		right: 2em;
+		top: 2em;
+
+	}
+	.div>div{
+		background: white;
+		height: 0.5rem;
+		width: 1.9rem;
+		border-radius: 10px;
+		transition: all 0.6s ease;
+	}
+	.toggle{
+		position: absolute;
+		right: -4.2em;
+		top: 2.5em;
+		z-index: 1;
+		opacity: 0;
+	}
+	.toggle:checked + .div>div:nth-child(1){
+		position: absolute;
+		top: 1em;
+		height: 0.1em;
+		transform: rotate(135deg);
+	}
+	.toggle:checked + .div>div:nth-child(2){
+		position: absolute;
+		top: 1em;
+		height: 0.1em;
+		transform: rotate(220deg);
+	}
+	.toggle:checked + .div>div:nth-child(3){
+		opacity: 0;
+		transform: rotate(250deg);
+	}
+	.toggle:checked:hover + .div>div:nth-child(1){
+		position: absolute;
+		top: 1em;
+		height: 0.1em;
+		transform: rotate(220deg);
+	}
+	.toggle:checked:hover + .div>div:nth-child(2){
+		position: absolute;
+		top: 1em;
+		height: 0.1em;
+		transform: rotate(320deg);
+	}
+	.menu{
+		position: absolute;
+		right: 1em;
+		top: 1em;
+		z-index: 0;
+		padding: 50px 25px 20px 0px;
+		background-color: rgba(0, 0, 0, .4);
+		height: 40%;
+		width: 60%;
+		border: solid 1px #46a293;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 1s;
+	}
+	.menuList>ul{
+		list-style-type: none;
+		text-align: center;
+		font-size: 1.5em;
+	
+	}
+	.menuList>ul>a>li{
+		transition: all 0.8s;
+	}
+	.menuList>ul>a>li:hover{
+		color:#46a293;
+		text-shadow: 0px 0px 5px white;
+		transform: translateY(-3px);
+	
+	}
+	.toggle:checked ~ .menu{
+		visibility: visible;
+		opacity: 1;
+	}
+
+	 /*IM A WEB DEVELOPER*/
+
+	.home{
+		background-image: url("/static/images/future2.jpg");
+		background-position: center center;
+		background-color: rgba(0, 0, 0, .7);
+		background-blend-mode: overlay;
+		background-size: cover;
+		font-family: monospace;
+	}
+	img{
+		display: none;
+	}
+	.welcome{
+		padding: 40px;
+		line-height: 20px;
+	}
+	i{
+		color: white;
+		transform: translate(-1em, -1em);
+	}
+	.welcome>p{
+		color: #fbffff;
+		font-size:1.4em;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 20px #fbffff;
+		padding-top: -10px;
+	}
+	.welcome>article{
+		font-size: 1em;
+		color: whitesmoke;
+	}
+	.web{
+		animation-name: blink;
+		animation-duration: 0.7s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+	}
+	.dev{
+		animation-name: blinky;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+	}
+	.welcome>a button{
+		background: rgba(0, 0, 0, .5);
+		height: 2.5em;
+		margin-top: 10px;
+		border: solid 3px #46a293;
+		color: white;
+		animation-name: bounce;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+		cursor: pointer;
+
+	}
+	.welcome>a+button{
+		background: rgba(0, 0, 0, .5);
+		height: 2.5em;
+		margin-top: 10px;
+		border: solid 3px #46a293;
+		color: white;
+		animation-name: bounce2;
+		animation-duration: 1s;
+		animation-delay: 1.2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+		cursor: pointer;
+	}
+
+	/*SERVICE*/
+
+	.services{
+		padding: 10px;
+		background-color: #252a30;
+	}
+	.service>h3{
+		color: #46a293;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.service>h1{
+		text-align: center;
+		color: white;
+
+	}
+	.service>p{
+		font-family: monospace;
+		text-align: center;
+		color: silver;
+	}
+	.service>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	content{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 10px;
+	}
+	content>div i{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #46a293;
+	}
+	.service+content>div{
+		background: #1f2326;
+		padding: 50px 10px 10px 10px;
+
+	}
+	.service+content>div p{
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		text-transform: capitalize;
+	}
+	.service+content>div article{
+		color: silver;
+		text-align: center;
+		font-family: monospace;
+	}
+
+	/*ABOUTME*/
+
+	.aboutMe{
+		padding: 10px;
+		background-color:#1f2326 ;
+	}	
+	.aboutMe>div{
+		display: grid;
+		grid-template-rows: 1fr 2fr;
+	}
+	.about>h3{
+		font-family: monospace;
+		text-align: center;
+		text-transform: uppercase;
+		color:  #46a293;
+	}
+	.about>h2{
+		text-align: center;
+		color: white;
+	}
+	.about>p{
+		text-align: center;
+		font-family: monospace;
+		color: silver;
+	}
+	.about>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.about2>div{
+		width: 10em;
+		height: 10em;
+		border-radius: 9em;
+		/*margin-top: 20px;
+		margin-left: 50px;*/
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+		border: solid 2px #46a293;
+		background-image: url("/static/images/gideon2.png");
+		background-size: contain;
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-color: rgba(0, 0, 0, .6);
+		background-blend-mode: overlay;
+	}
+	.about2>aside h2,.about2>aside p{
+		color: white;
+		font-family: monospace;
+	}
+	.accessMe{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
+	.accessMe>div p{
+		color: #46a293;
+	}
+	.accessMe>div article{
+		color: white;
+	}
+	
+	/*SKILLS*/
+
+	.mySkills{
+		padding: 10px;
+		background-color: #252a30;
+	}
+
+	.mySkills>h2{
+		text-align: center;
+		color: white;
+	}
+
+	.mySkills>div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.content2{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 10px;
+		justify-items: left;
+		opacity: 0.0;
+		transition: 3s;
+	}
+	.content2>div p{
+		font-size: 1em;
+		color: white;
+		
+	}
+	.content2>div p+div{
+		color: #46a293;
+	}
+	.seeSkills{
+		background: rgba(0, 0, 0, .5);
+		border: solid 3px #46a293;
+		border-radius: 5px;
+		width: 6em;
+		height: 3em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	.seeSkills>p{
+		color: white;
+		text-align: center;
+		font-family: ink Free;
+		animation-name: sabi;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+	meter{
+		width: 15em;
+		height: 1em;
+		
+	}
+	meter::-webkit-meter-optimum-value{
+		background: #46a293;
+	}
+	meter::-moz-meter-optimum-value{
+		background: #46a293;
+	}
+	meter::-webkit-meter-bar{
+		background: black;
+	}
+	meter::-moz-meter-bar{
+		background: black;
+	}
+	span{
+		color: #46a293;
+	}
+	.counter{
+		display: none;
+	}
+	#firstbar{
+		display: inline-block;
+		width: 2em;
+		height: 1em;
+		background: black;
+		border-radius: 20px;
+		display: none;
+	}
+	#secondbar{
+		width: 10px;
+		height: 10px;
+		background: #46a293;
+		transform: translate(5px,5px);
+		border-radius: 20px;
+		transition: width 1s;
+		display: none;
+	}
+	.counter,.counter2,.counter3,.counter4,.counter5,.counter6,.counter7,.counter8{
+		display: inline-block;
+		font-size: 18px;
+		color: black;
+		transform: translateY(-5px);
+		display: none;
+	}	
+
+	/*WORK*/
+
+	.contact{
+		padding:10px;
+		background-color: #1f2326 ;
+	}
+	.contact>h2,.form>p{
+		text-align: center;
+		color: white;
+	}
+	.contact>h2+div{
+		height: 0.1em;
+		width: 4em;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #46a293;
+		margin-bottom: 20px;
+	}
+	.contactMe{
+		display: grid;
+		grid-template-rows: 1fr 2fr;
+		justify-items: safe center;
+	}	
+	.click>p{
+		color: white;
+		font-size: 1em;
+		font-family: ink Free;
+		text-align: center;
+	}
+	.slider>a>img{
+		height: 15em;
+		width: 15em;
+		display: block;
+	}
+	.motherCircle{
+		width: 5em;
+		position: relative;
+		left: 65%;
+		transform: translateX(-65%);
+	}
+	.circle{
+		display: inline-block;
+		background: #1f2326;
+		height: 0.4em;
+		width: 0.4em;
+		border: solid 1px #46a293 ;
+		border-radius: 1em;
+	}
+	.contactMe>.form>aside>div>a i{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #46a293;
+
+	}
+	.contactMe>.form>aside>div>a i:hover{
+		color: white;
+	}
+	.form>h2, .form>p{
+		color: white;
+		font-family: ink Free;
+		font-size: 1rem;
+	}
+
+	#formItself{
+		border: solid 4px #46a293;
+		border-radius: 20px;
+		padding:20px;
+		height: 24.5em;
+		color:white;
+		font-size: 1rem;
+		margin-bottom: 15px;
+
+	}
+	input{
+		height: 2em;
+		width: 15em;
+		border-radius: 20px;
+	}
+	textarea{
+		border-radius: 20px;
+		text-indent: 10px;
+		height: 15em;
+		width: 15em;
+	}
+	form>button{
+		height: 40px;
+		width: 70px;
+		color: black;
+		background-color: #fbffff;
+		border: none;
+		border-radius: 20px;
+		font-family: arial black;
+		animation-name: send;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2, end);
+	}
+
+	/*FOOTER*/
+
+	.backToTop{
+		background: rgba(70, 162, 147, .5);
+		height: 30px;
+		width: 30px;
+		border-radius: 20px;
+		border: solid 2px #46a293;
+		font-size: 14px;
+		font-weight: bolder;
+		text-align: center;
+		position: fixed;
+		bottom: 120px;
+		right: 50px;
+		transform: rotate(-90deg);
+		visibility: hidden;
+	}
+	.backToTop:hover{
+		background-color: white;
+	}
+	.backToTop>p{
+		color: white;
+		transform: translate(1px,-6px);
+		animation-name: top;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+
+	footer{
+		padding:10px 100px 10px 100px;
+		background-color: #252a30;
+		text-align: center;
+		color: white;
+	}
+	.floater1{
+		position: absolute;
+		top: 0;
+		animation-name: float1;
+		animation-iteration-count: infinite;
+		animation-duration: 30s;
+		animation-direction: alternate-reverse;
+	}	
+	@keyframes float1{
+		from{
+			top:0;
+		}
+		to{
+			top: 90em;
+		}
+	}
+	.floater2{
+		position: absolute;
+		top: 30em;
+		left: 20em;
+		animation-name: float2;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}	
+	@keyframes float2{
+		from{
+			top:30em;
+			left: 20em;
+		}
+		to{
+			top: 100em;
+			left: 0em;
+		}
+	}
+	.floater3{
+		position: absolute;
+		top: 20em;
+		left: 30em;
+		animation-name: float3;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float3{
+		from{
+		
+			left: 20em;
+		}
+		to{
+			left: 5em;
+		}
+	}
+	.floater4{
+		position: absolute;
+		top: 10em;
+		right: 20em;
+		animation-name: float4;
+		animation-iteration-count: infinite;
+		animation-duration: 15s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float4{
+		from{
+			top: 10em;
+			right: 20em;
+		}
+		to{
+			top:70em ;
+			right: 10em;
+		}
+	}
+	
+	.floater5{
+		position: absolute;
+		top: 25em;
+		right: 20em;
+		animation-name: float5;
+		animation-iteration-count: infinite;
+		animation-duration: 50s;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes float5{
+		from{
+			top: 25em;
+		}
+		to{
+			top: 90em ;
+		}
+	}
+
+
+	@keyframes blink{
+		from{
+			color:#fbffff;
+			text-shadow: 2px 2px 20px #fbffff;
+		}
+
+		to{
+			color: #0e3742;
+			text-shadow: none;
+		}
+	}
+	@keyframes blinky{
+		from{
+			color: #fbffff;
+			text-shadow: 2px 2px 20px #fbffff;
+		}
+
+		to{
+			color: #0e3742;
+			text-shadow: none;
+		}
+	}
+	@keyframes bounce{
+		from{
+			border-radius: 0px;
+		}
+
+		to{
+			border-radius: 30px;
+		}
+	}
+	@keyframes bounce2{
+		from{
+			border-radius: 0px;
+		}
+
+		to{
+			border-radius: 30px;
+		}
+	}
+	@keyframes sabi{
+		from{
+			color:white;
+		}
+		to{
+			color:#46a293;
+		}	
+	}
+	@keyframes top{
+		from{
+			transform: translate(1px,-6px);
+			color: white;
+		}
+		to{
+			transform: translate(-3px,-6px);
+			color: #1f2326;
+		}
+	}
+	@keyframes send{
+		from{
+			background-color:#fbffff;
+			box-shadow: 0px 0px 5px #fbffff;
+		}
+
+		to{
+			background-color: #1f2326;
+			box-shadow: none;
+		}
+	}	
+
+}
+

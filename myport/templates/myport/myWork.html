@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My work</title>
+	<link rel="shortcut icon" href="/static/images/icon.png" type="image/x-icon">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style type="text/css">
+	body{
+		background: #1f2326;
+		box-sizing: border-box;
+	}
+	main{
+		box-shadow: 0px 0px 20px black;
+	}
+	a[href]{
+		color: white;
+		text-decoration: none;
+	}
+	h2{
+		color: #46a293;
+		font-size: 3em;
+		font-family: ephesis;
+		text-align: center;
+	}
+	::selection{
+		background-color: #46a293;
+		color: #fff;
+	}	
+	.note{
+		color: #46a293;
+		text-align: center;
+	}
+	@media screen and (min-width: 1200px){
+			.holdAll{
+			padding: 40px;
+		}
+		nav{
+			background: #252a30;
+		}
+		nav>p{
+			color: white;
+			font-size: 1.5em;
+			font-family: ephesis;
+			text-transform: capitalize;
+			transform: translateX(6vw);
+			
+		}
+		.nav{
+			position: relative;
+			left: 90%;
+			transform: translateX(-90%);
+		}
+		.nav>ul{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			list-style-type: none;
+		}
+		.nav>ul>a>li:hover{
+			color: #46a293;
+			transform: translateY(-5px);
+			text-decoration: underline;
+			text-transform: uppercase;
+		}
+		.menuWrapper{
+			display: none;
+		}	
+		h1{
+			color: white;
+			font-size: 3em;
+			text-align: center;
+		}
+		h1+div{
+			height: 0.1em;
+			width: 4em;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #46a293;
+			margin-bottom: 20px;
+		}
+		.grid1{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			justify-items: center;
+			width: 70em;
+			position: relative;
+			left: 13%;
+			
+		}
+		img{
+			height: 20em;
+			width: 30em;
+		}
+		img+a{
+			display: block;
+			font-size: 1.3em;
+		}
+		article{
+			color: white;
+			font-size: 1.3em;
+		}
+		footer{
+			padding:10px 100px 10px 100px;
+			background-color: #252a30;
+			text-align: center;
+			color: white;
+		}
+		
+		
+	}
+													/*Large Tablet/small laptop view*/
+	@media(min-width: 869px) and (max-width: 1025px){
+				.holdAll{
+			padding: 40px;
+		}
+		nav{
+			background: #252a30;
+		}
+		nav>p{
+			color: white;
+			font-size: 1.5em;
+			font-family: ephesis;
+			text-transform: capitalize;
+			transform: translateX(6vw);
+			
+		}
+		.nav{
+			position: relative;
+			left: 90%;
+			transform: translateX(-90%);
+		}
+		.nav>ul{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			list-style-type: none;
+		}
+		.nav>ul>a>li:hover{
+			color: #46a293;
+			transform: translateY(-5px);
+			text-decoration: underline;
+			text-transform: uppercase;
+		}
+		.menuWrapper{
+			display: none;
+		}	
+		h1{
+			color: white;
+			font-size: 2em;
+			text-align: center;
+		}
+		h1+div{
+			height: 0.1em;
+			width: 4em;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #46a293;
+			margin-bottom: 20px;
+		}
+		.grid1,.grid2{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			justify-items: center;
+			width: 40em;
+			position: relative;
+			left: 13%;
+			
+		}
+		.grid2{
+			margin-top: 20px;
+		}
+		img{
+			height: 19em;
+			width: 19em;
+		}
+		img+a{
+			display: block;
+			font-size: 1.3em;
+		}
+		article{
+			color: white;
+			font-size: 1.3em;
+		}
+		footer{
+			padding:10px 100px 10px 100px;
+			background-color: #252a30;
+			text-align: center;
+			color: white;
+		}
+		
+
+	}
+															/*Tablet view*/
+	@media  (min-width: 550px) and (max-width: 868px){
+		.holdAll{
+		padding: 0.5em;
+		}
+		nav{
+			background: #252a30;
+		}
+		nav>p{
+			color: white;
+			font-size: 1.3em;
+			font-family: ephesis;
+			text-transform: capitalize;
+			transform: translateX(6vw);
+		}	
+		.nav>ul{
+				display: none;
+		}		
+		.div{
+			background:#252a30;;
+			height: 2em;
+			width: 2em;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			right: 2em;
+			top: 2em;
+
+		}
+		.div>div{
+			background: white;
+			height: 0.5rem;
+			width: 1.9rem;
+			border-radius: 10px;
+			transition: all 0.6s ease;
+		}
+		.toggle{
+			position: absolute;
+			right: 2.2em;
+			top: 2.2em;
+			z-index: 2;
+			opacity: 0;
+			height: 2.5em;
+			width: 2.5em;
+		}
+		.toggle:checked + .div>div:nth-child(1){
+			position: absolute;
+			top: 1em;
+			height: 0.1em;
+			transform: rotate(135deg);
+		}
+		.toggle:checked + .div>div:nth-child(2){
+			position: absolute;
+			top: 1em;
+			height: 0.1em;
+			transform: rotate(220deg);
+		}
+		.toggle:checked + .div>div:nth-child(3){
+			opacity: 0;
+			transform: rotate(250deg);
+		}
+		.toggle:checked:hover + .div>div:nth-child(1){
+			position: absolute;
+			top: 1em;
+			height: 0.1em;
+			transform: rotate(220deg);
+		}
+		.toggle:checked:hover + .div>div:nth-child(2){
+			position: absolute;
+			top: 1em;
+			height: 0.1em;
+			transform: rotate(320deg);
+		}
+		.menu{
+			position: absolute;
+			right: 1em;
+			top: 1em;
+			z-index: 1;
+			padding: 50px 25px 20px 0px;
+			background-color: rgba(0, 0, 0, .4);
+			height: 40%;
+			width: 60%;
+			border: solid 1px #46a293;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 1s;
+		}
+		.menuList>ul{
+			list-style-type: none;
+			text-align: center;
+			font-size: 1.5em;
+		}
+		.menuList>ul>a>li:hover{
+			color:#46a293;
+			text-shadow: 0px 0px 5px white;
+			transform: translateY(-3px);
+		}
+		.toggle:checked ~ .menu{
+			visibility: visible;
+			opacity: 1;
+		}
+		h1{
+			color: white;
+			text-transform: capitalize;
+			text-align: center;
+			font-size: 1.5em;
+
+		}
+		h1+div{
+			height: 0.1em;
+			width: 4em;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #46a293;
+			margin-bottom: 20px;
+		}
+		img{
+			height: 25em;
+			width: 25em;
+			display: block;
+			margin: 1em 0 1em 0;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+
+		}
+		img+a{
+			position: relative;
+			left: 20%;
+			transform: translateX(-20%);
+		}
+		article{
+			color: white;
+			text-align: center;
+		}
+		footer{
+			padding:10px 100px 10px 100px;
+			background-color: #252a30;
+			text-align: center;
+			color: white;
+		}
+	}
+
+															/*Phone view*/
+	@media (min-width: 320px) and (max-width: 549px){
+		.holdAll{
+		padding: 0.5em;
+		}
+		nav{
+			background: #252a30;
+		}
+		nav>p{
+			color: white;
+			font-size: 1.3em;
+			font-family: ephesis;
+			text-transform: capitalize;
+			transform: translateX(6vw);
+		}	
+		.nav>ul{
+				display: none;
+		}		
+		.div{
+			background:#252a30;;
+			height: 2em;
+			width: 2em;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			right: 2em;
+			top: 2em;
+
+		}
+		.div>div{
+			background: white;
+			height: 0.5rem;
+			width: 1.9rem;
+			border-radius: 10px;
+			transition: all 0.6s ease;
+		}
+		.toggle{
+			position: absolute;
+			right: 2.2em;
+			top: 2.2em;
+			z-index: 2;
+			opacity: 0;
+			height: 2.5em;
+			width: 2.5em;
+		}
+		.toggle:checked + .div>div:nth-child(1){
+			position: absolute;
+			top: 1em;
+			height: 0.1em;
+			transform: rotate(135deg);
+		}
+		.toggle:checked + .div>div:nth-child(2){
+			position: absolute;
+			top: 1em;
+			height: 0.1em;
+			transform: rotate(220deg);
+		}
+		.toggle:checked + .div>div:nth-child(3){
+			opacity: 0;
+			transform: rotate(250deg);
+		}
+		.toggle:checked:hover + .div>div:nth-child(1){
+			position: absolute;
+			top: 1em;
+			height: 0.1em;
+			transform: rotate(220deg);
+		}
+		.toggle:checked:hover + .div>div:nth-child(2){
+			position: absolute;
+			top: 1em;
+			height: 0.1em;
+			transform: rotate(320deg);
+		}
+		.menu{
+			position: absolute;
+			right: 1em;
+			top: 1em;
+			z-index: 1;
+			padding: 50px 25px 20px 0px;
+			background-color: rgba(0, 0, 0, .4);
+			height: 40%;
+			width: 60%;
+			border: solid 1px #46a293;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 1s;
+		}
+		.menuList>ul{
+			list-style-type: none;
+			text-align: center;
+			font-size: 1.5em;
+		}
+		.menuList>ul>a>li:hover{
+			color:#46a293;
+			text-shadow: 0px 0px 5px white;
+			transform: translateY(-3px);
+		}
+		.toggle:checked ~ .menu{
+			visibility: visible;
+			opacity: 1;
+		}
+		h1{
+			color: white;
+			text-transform: capitalize;
+			text-align: center;
+			font-size: 1.5em;
+
+		}
+		h1+div{
+			height: 0.1em;
+			width: 4em;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #46a293;
+			margin-bottom: 20px;
+		}
+		img{
+			height: 15em;
+			width: 15em;
+			display: block;
+			margin: 1em 0 1em 0;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+
+		}
+		img+a{
+			position: relative;
+			left: 20%;
+			transform: translateX(-20%);
+		}
+		article{
+			color: white;
+			text-align: center;
+		}
+		footer{
+		padding:10px 100px 10px 100px;
+		background-color: #252a30;
+		text-align: center;
+		color: white;
+	}
+
+		
+	}
+</style>
+<body>
+	<div class="holdAll">
+		<main>
+			<nav>
+				<p class="logo" style="display: inline-block;">deon</p>
+				<div class="nav" style="display: inline-block;">
+					<ul>
+						<a href="{% url 'home' %}"><li>Home</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="{% url 'home' %}"><li>Services</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="{% url 'home' %}"><li>About</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="{% url 'home' %}"><li>Skills</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="{% url 'home' %}"><li>My works</li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</ul>
+				</div>	
+			</nav>
+			<div class="menuWrapper">
+				<form class="form" name="form">
+					<input type="checkbox" class="toggle" id="toggly">
+					<div class="div">
+						<div></div>
+						<div></div>
+						<div></div>		
+					</div>
+					<aside class="menu">
+						<div class="menuList">
+							<ul>
+								<a href="{% url 'home' %}"><li>Home</li></a>
+								<br>
+								<a href="{% url 'home' %}"><li>Services</li></a>
+								<br>
+								<a href="{% url 'home' %}"><li>About</li></a>
+								<br>
+								<a href="{% url 'home' %}"><li>Skills</li></a>
+								<br>
+								<a href="{% url 'home' %}"><li>My works</li></a>
+							</ul>
+						</div>
+					</aside>
+				</form>	
+			</div>		
+			<h1>My Works</h1>
+			<div></div>
+			<h2>Websites</h2>
+			<div class="grid1" data-aos="fade-down" data-aos-duration="1000">
+				<div>
+					<img src="/static/images/spoc.png" alt="spocwebsite">
+					<a href="https://spoc.com.ng/">Visit website >>></a>
+				</div>	
+			</div>
+			<h2>Templates</h2>
+			<div class="grid1" data-aos="fade-down" data-aos-duration="1000">
+				<div>
+					<img src="/static/images/template1.png" alt="template1">
+					<a href="https://deontemplatetwo.netlify.app/" target="_blank">view >>></a>
+				</div>
+				<div>
+					<img src="/static/images/template2.png" alt="template2">
+					<a href="https://deontemplateone.netlify.app/" target="_blank">view >>></a>
+				</div>		
+			</div>
+			<!-- <h2>Apps</h2> -->
+			<h2>These are just me fooling around with codes!</h2>
+			<p  class="note">NOTE: best viewed on PC</p>
+			<div class="grid1" data-aos="fade-down" data-aos-duration="1000">
+				<div>
+					<img src="/static/images/Phone.png" alt="contact">
+					<a href="https://contactdeon.herokuapp.com/" target="_blank">view >>></a>
+				</div>
+				<div>
+					<img src="/static/images/day_night.png" alt="day&night">
+					<a href="https://dayndnight.netlify.app/">view >>></a>
+				</div>	
+				<div>
+					<img src="/static/images/elixir.png" alt="elixir">
+					<a href="https://bowlofelixir.netlify.app/">view >>></a>
+				</div>		
+			</div>
+			<footer>
+				<p>copyright &copy; 2022</p>
+			</footer>
+		</main>
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript">AOS.init();</script>
+</body>
+</html>
