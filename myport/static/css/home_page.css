@@ -1915,6 +1915,9 @@ a[href]{
 	.holdAll{
 		padding: 0.5em;
 	}
+	body{
+		overflow-x: hidden;
+	}
 	nav{
 		background: #252a30;
 	}
@@ -2407,7 +2410,7 @@ a[href]{
 		border-radius: 20px;
 		text-indent: 10px;
 		height: 15em;
-		width: 15em;
+		width: 18em;
 	}
 	form>button{
 		height: 40px;
