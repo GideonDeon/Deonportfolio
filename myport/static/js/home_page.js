@@ -161,7 +161,7 @@ function show(){
 //slider 
 
 let holder = document.querySelector('.slide');
-let image = ['/static/images/template3.png','/static/images/Template2.png','/static/images/spoc.png','/static/images/template1.png'];
+let image = ['/static/images/template3.png','/static/images/Weather.png','/static/images/spoc.png','/static/images/template1.png'];
 
 let count1 = 0;
 
