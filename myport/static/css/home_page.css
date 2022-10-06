@@ -57,7 +57,6 @@ a[href]{
 	.nav>ul>a>li:hover{
 		color: #46a293;
 		transform: translateY(-5px);
-		text-decoration: underline;
 		text-transform: uppercase;
 	}
 	.menuWrapper{
@@ -596,7 +595,7 @@ a[href]{
 	}
 }
 												/*Large tablet/small laptop view */
-@media(min-width: 869px) and (max-width: 1025px){
+@media(min-width: 869px) and (max-width: 1199px){
 	.holdAll{
 		padding: 40px;
 	}

@@ -56,7 +56,6 @@
 		.nav>ul>a>li:hover{
 			color: #46a293;
 			transform: translateY(-5px);
-			text-decoration: underline;
 			text-transform: uppercase;
 		}
 		.menuWrapper{
@@ -82,12 +81,13 @@
 			justify-items: center;
 			width: 70em;
 			position: relative;
-			left: 13%;
+			left: 40%;
+			transform: translateX(-40%);
 			
 		}
 		img{
 			height: 20em;
-			width: 30em;
+			width: 27em;
 		}
 		img+a{
 			display: block;
@@ -113,8 +113,8 @@
 		
 	}
 													/*Large Tablet/small laptop view*/
-	@media(min-width: 869px) and (max-width: 1025px){
-				.holdAll{
+	@media(min-width: 869px) and (max-width: 1199px){
+		.holdAll{
 			padding: 40px;
 		}
 		nav{
@@ -162,17 +162,19 @@
 			background: #46a293;
 			margin-bottom: 20px;
 		}
-		.grid1,.grid2{
+		h2{
+			color: #46a293;
+			font-size: 3em;
+			font-family: ephesis;
+			text-align: center;
+		}
+		.grid1{
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			justify-items: center;
 			width: 40em;
 			position: relative;
 			left: 13%;
-			
-		}
-		.grid2{
-			margin-top: 20px;
 		}
 		img{
 			height: 19em;
@@ -553,15 +555,15 @@
 			<div class="grid1" data-aos="fade-down" data-aos-duration="1000">
 				<div>
 					<img src="/static/images/contact.png" alt="contactapp">
-					<a href="https://mycontactsaver.herokuapp.com/" target="_blank">Personal online contact saver >>></a>
+					<a href="https://mycontactsaver.herokuapp.com/" target="_blank">Personal online-contact app</a>
 				</div>	
 				<div>
 					<img src="/static/images/Weather.png" alt="template3">
-					<a href="https://weatherconditionnow.herokuapp.com/" target="_blank">A simple weather app >>></a>
+					<a href="https://weatherconditionnow.herokuapp.com/" target="_blank">Simple weather app</a>
 				</div>	
 				<div>
 					<img src="/static/images/interest.png" alt="s.i_app">
-					<a href="https://deon-simpleinterest-calculator.netlify.app/" target="_blank">simple interest calculator>>></a>
+					<a href="https://deon-simpleinterest-calculator.netlify.app/" target="_blank">Simple interest calculator</a>
 				</div>
 			</div>
 			<h2>Templates</h2>
@@ -577,22 +579,6 @@
 				<div>
 					<img src="/static/images/template1.png" alt="template1">
 					<a href="https://deontemplatetwo.netlify.app/" target="_blank">view >>></a>
-				</div>		
-			</div>
-			<h2>These are just me fooling around with codes!</h2>
-			<p  class="note">NOTE: best viewed on PC</p>
-			<div class="grid1" data-aos="fade-down" data-aos-duration="1000">
-				<div>
-					<img src="/static/images/phone.png" alt="contact">
-					<a href="https://contactdeon.herokuapp.com/" target="_blank">view >>></a>
-				</div>
-				<div>
-					<img src="/static/images/day_night.png" alt="day&night">
-					<a href="https://dayndnight.netlify.app/">view >>></a>
-				</div>	
-				<div>
-					<img src="/static/images/elixir.png" alt="elixir">
-					<a href="https://bowlofelixir.netlify.app/">view >>></a>
 				</div>		
 			</div>
 			<footer>
